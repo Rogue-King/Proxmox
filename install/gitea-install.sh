@@ -19,6 +19,10 @@ $STD apt-get install -y git
 $STD apt-get install -y curl
 $STD apt-get install -y sudo
 $STD apt-get install -y mc
+<<<<<<< HEAD
+=======
+$STD apt-get install -y sqlite3
+>>>>>>> f59c1227be20d1d71cd751baa74571093be73317
 msg_ok "Installed Dependencies"
 
 msg_info "Installing Gitea"

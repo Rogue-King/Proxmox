@@ -22,7 +22,11 @@ echo -e "Loading..."
 APP="Gitea"
 var_disk="8"
 var_cpu="1"
+<<<<<<< HEAD
 var_ram="512"
+=======
+var_ram="1024"
+>>>>>>> f59c1227be20d1d71cd751baa74571093be73317
 var_os="debian"
 var_version="12"
 variables
@@ -62,6 +66,10 @@ wget -q https://github.com/go-gitea/gitea/releases/download/v$RELEASE/gitea-$REL
 systemctl stop gitea
 rm -rf /usr/local/bin/gitea 
 mv gitea* /usr/local/bin/gitea
+<<<<<<< HEAD
+=======
+chmod +x /usr/local/bin/gitea
+>>>>>>> f59c1227be20d1d71cd751baa74571093be73317
 systemctl start gitea
 msg_ok "Updated $APP Successfully"
 exit
